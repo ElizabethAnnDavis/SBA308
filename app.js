@@ -8,7 +8,7 @@
  * - E. Driver's Ed
  */
 
-/*                     Q + A                    */
+/******************** Q + A *********************/
 // 1. How do we assign a value to a variable?
 let aVar = "this string";
 
@@ -21,15 +21,15 @@ let aNewVar = aVar;
 // 4. Remind me, what are declare, assign, and define?
 // declare -  to create a variable
 // assign - to give a variable a value
-// define - ?
+// define - creating a function with name, params, body, creating an object with properties
 
 // 5. What is pseudocoding and why should you do it?
 // pseudocoding is writing out the logic it plan english and can be used to help map out the logic of a problem in a more human readable format
 
 // 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-// 
+// 80% thinking, 20% coding
 
-/*                    Strings                    */
+/******************* Strings ********************/
 // 1. Create a variable called firstVariable
 // 2. Assign it the value of the string "Hello World"
 let firstVariable = "Hello World";
@@ -53,7 +53,7 @@ let yourName = "Elizabeth";
 let introduction = ("Hello, my name is " + yourName + ".");
 console.log(introduction);
 
-/*                   Booleans                    */
+/******************* Booleans *******************/
 // Using the provided variable definitions, replace the blanks so that all log statements print true in the console. 
 // Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console
 const a = 4;
@@ -74,7 +74,7 @@ console.log(a + b === c); // note: a < b < c is NOT CORRECT (and is not a valid 
 console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
 console.log(48 == '48');
 
-/*                    The Farm                    */
+/******************* The Farm *******************/
 // 1. Declare a variable animal. Set it to be either "cow" or something else
 let animal = "cow";
 
@@ -108,7 +108,7 @@ if(age >= 16){
  * - D. Savings Account
  */
 
-/*                    The Basics                    */
+/****************** The Basics ******************/
 // 1. Write a loop that will print out all the numbers from 0 to 10, inclusive
 for(let i = 1; i <= 10; i++){
     console.log(i);
@@ -116,7 +116,7 @@ for(let i = 1; i <= 10; i++){
 
 // 2. Write a loop that will print out all the numbers from 10 up to and including 400
 for(let i = 10; i <= 400; i++){
-    //console.log(i); // commented out intentionally because it clogs up the console log
+    console.log(i); // commented out intentionally because it clogs up the console log
 };
 
 // 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000
@@ -124,15 +124,15 @@ let count = 0;
 for(let i = 12; i <= 4000; i++){
     count++;
     if(count === 3){
-        //console.log(i); // commented out intentionally because it clogs up the console log
+        console.log(i); // commented out intentionally because it clogs up the console log
         count = 0;
     };
 };
 
-/*                     Get Even                     */
+/******************* Get Even *******************/
 // 1. Print out the numbers that are within the range of 1 - 100
 for(let i = 1; i <= 100; i++){
-    //console.log(i); // commented out intentionally because it clogs up the console log
+    console.log(i); // commented out intentionally because it clogs up the console log
 }
 // 2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
 for(let i = 1; i <= 100; i++){
@@ -143,7 +143,7 @@ for(let i = 1; i <= 100; i++){
     };
 }
 
-/*                   Give me Five                   */
+/***************** Give Me Five *****************/
 // 1. For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
 //    Example Output:
 //    I found a 5. High five!
@@ -170,7 +170,7 @@ for(let i = 0; i <=100; i++){
     };
 };
 
-/*                  Savings Account                 */
+/**************** Savings Account ***************/
 // 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
 //    Check your work! Your bank_account should have $55 in it.
 let sum = 0;
@@ -199,19 +199,19 @@ console.log(sum);
  * - H. What's in Your Closet?
  */
 
-/*                   Talk About It                  */
+/***************** Talk About It ****************/
 // 1. What are the things in an array called?
 // elements
 // 2. Do Arrays guarantee those things will be in order?
 // no
 // 3. What real-life thing could you model with an array?
-// a drawer of shirts
+// a drawer of shirts, a line of people, a group of items collected together in one place
 
-/*                    Easy Does It                  */
+/***************** Easy Does It *****************/
 // 1. Create an array that contains three quotes and store it in a variable called quotes
 const quotes = ["good new everyone", "bite my shiny metal a**", "shut up and take my money"];
 
-/*                 Accessing Elements               */
+/************** Accessing Elements **************/
 // Given the following array const randomThings = [1, 10, "Hello", true]
 const randomThings = [1, 10, "Hello", true];
 // 1. How do you access the 1st element in the array?
@@ -241,8 +241,7 @@ console.log(ourClass[4]);
 ourClass.push("Cloud City");
 console.log(ourClass);
 
-
-/*                     Mix It Up                    */
+/******************* Mix It Up ******************/
 // Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
 // Given the following array: const myArray = [5, 10, 500, 20]
 const myArray = [5, 10, 500, 20];
@@ -262,13 +261,13 @@ console.log(myArray);
 // 5. Reverse this array using Array.prototype.reverse().
 console.log(myArray.reverse());
 //    Did you mutate the array? 
-//
+// yes
 //    What does mutate mean? 
 // it means to change the original array
 //    Did the .reverse()method return anything?
-//
+// it returns a reference to the array
 
-/*                   Biggie Smalls                  */
+/***************** Biggie Smalls ****************/
 // Create a variable that contains an integer.
 let intVar = 13;
 // Write an if ... elsestatement that:
@@ -280,7 +279,7 @@ if(intVar >= 100){
     console.log("little number");
 };
 
-/*                Monkey in the Middle              */
+/************* Monkey in the Middle *************/
 // Write an if ... else if ... else statement:
 // 1. console.log()little number if the number entered is less than 5.
 // 2. If the number entered is more than 10, log big number.
@@ -293,7 +292,7 @@ if(intVar < 5){
     console.log("monkey");
 };
 
-/*               What's in Your Closet?             */
+/************ What's in Your Closet? ************/
 const kristynsCloset = [
     "left shoe",
     "cowboy boots",
@@ -332,11 +331,11 @@ kristynsCloset.splice(6, 0, "raybans");
 kristynsCloset[5] = "stained knit hat";
 console.log(kristynsCloset);
 // 4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirts array.
-//console.log(thomsCloset[0][0]);
+console.log(thomsCloset[0][0]);
 // 5. In the same way, access one item from Thom's pants array.
-//console.log(thomsCloset[1][1]);
+console.log(thomsCloset[1][1]);
 // 6. Access one item from Thom's accessories array.
-//console.log(thomsCloset[2][2]);
+console.log(thomsCloset[2][2]);
 // 7. Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
 console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][1]} and ${thomsCloset[2][2]}!`);
 // 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
@@ -355,7 +354,7 @@ console.log(thomsCloset);
  * - H. printLongestWord
  */
 
-/*                   printGreeting                  */
+/***************** printGreeting ****************/
 // Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
 // You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
 // console.log(printGreeting("Slimer"));
@@ -365,7 +364,7 @@ function printGreeting(name){
 }
 console.log(printGreeting("Slimer"));
 
-/*                     printCool                    */
+/******************* printCool ******************/
 // Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
 // console.log(printCool("Captain Reynolds"));
 // => "Captain Reynolds is cool";
@@ -374,7 +373,7 @@ function printCool(name){
 }
 console.log(printCool("Captain Reynolds"));
 
-/*                   calculateCube                  */
+/***************** calculateCube ****************/
 // Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
 // console.log(calculateCube(5));
 // => 125
@@ -384,7 +383,7 @@ function calculateCube(n){
 }
 console.log(calculateCube(5));
 
-/*                      isVowel                     */
+/******************** isVowel *******************/
 // Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
 // console.log(isVowel("a"));
 // => true
@@ -400,7 +399,7 @@ function isVowel(c){
 }
 console.log(isVowel("a"));
 
-/*                   getTwoLengths                  */
+/***************** getTwoLengths ****************/
 // Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
 // => [4, 13]
@@ -410,7 +409,7 @@ function getTwoLengths(s1, s2){
 }
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 
-/*                getMultipleLengths                */
+/*************** getMultipleLengths *************/
 // Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 // => [5, 4, 2, 2, 4]
@@ -424,7 +423,7 @@ function getMultipleLengths(a){
 }
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
 
-/*                     maxOfThree                   */
+/****************** maxOfThree ******************/
 // Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
 // console.log(maxOfThree(6, 9, 1));
 // => 9
@@ -440,7 +439,7 @@ function maxOfThree(n1, n2, n3){
 }
 console.log(maxOfThree(6, 9, 1));
 
-/*                  printLongestWord                */
+/**************** printLongestWord **************/
 // Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
 // => "Peanutbutter"
@@ -467,7 +466,7 @@ console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanut
  * - G. Functions Can Operate on Objects
  */
 
-/*                Make a User Object                */
+/************** Make a User Object **************/
 // 1. Create an object called user.
 // 2. Write in to the object the key-value pairs for name, email, age, and purchased. 
 //    Set the value of purchased to an empty array []. 
@@ -479,19 +478,19 @@ let user = {
     purchased: []
 };
 
-/*                  Update the User                 */
+/**************** Update the User ***************/
 // 1. Our user has changed his or her email address. Without changing the original user object, update the email value to a new email address.
 user.email = "anewemail@server.com";
 
 // 2. Our user has had a birthday! Without changing the original user object, increment the age value using the postfix operator. Hint: age++
 user.age++;
 
-/*              Adding Keys and Values              */
+/************* Adding Keys and Values ***********/
 // You have decided to add your user's location to the data that you want to collect.
 // 1. Without changing the original user object, add a new key location to the object, and give it a value or some-or-other location (a string).
 user.location = "some-or-other location";
 
-/*                    Shopaholic!                   */
+/****************** Shopaholic! *****************/
 // 1. Our user has purchased an item! They have purchased some "carbohydrates". Using .push(), add the string "carbohydrates" to the purchased array.
 user.purchased.push("carbohydrates");
 // 2. Our user has purchased an item! They have purchased some "peace of mind". Using .push(), add the string "peace of mind" to the purchased array.
@@ -501,7 +500,7 @@ user.purchased.push("Merino jodhpurs");
 // 4. Console.log just the "Merino jodhpurs" from the purchased array.
 console.log(user.purchased[2]);
 
-/*               Object-within-object               */
+/************* Object-within-object *************/
 // Remember that you can add an object to an existing object in the same way that you can add any new property/value pair.
 // If we want to give our user a friend with a name and age, we could write:
 /*
@@ -530,7 +529,7 @@ user.friend.purchased.push("A latte");
 // 7. Console.log just "A latte" from the friend's purchased array.
 console.log(user.friend.purchased[1]);
 
-/*                      Loops                       */
+/********************* Loops ********************/
 // 1. Write a for loop that iterates over the User's purchased array (NOT the friend's purchased array), and prints each element to the console.
 for(let i = 0; i < user.purchased.length; i++){
     console.log(user.purchased[i]);
@@ -540,7 +539,7 @@ for(let i = 0; i < user.friend.purchased.length; i++){
     console.log(user.friend.purchased[i]);
 };
 
-/*          Functions Can Operate on Objects        */
+/******* Functions Can Operate on Objects *******/
 // 1. Write a single function updateUser that takes no parameters. When the function is run, it should:
 // 2. increment the user's age by 1
 // 3. make the user's name uppercase
@@ -573,7 +572,7 @@ console.log(oldAndLoud(user));
  * - 4. Cat Brain Bender
  */
 
-/*                      Mama Cat                    */
+/******************* Mama Cat *******************/
 // - Define an object called cat1 that contains the following properties:
 //   - name
 //   - breed
@@ -588,8 +587,7 @@ let cat1 = {
 console.log(cat1.age);
 console.log(cat1.breed);
 
-
-/*                      Papa Cat                    */
+/******************* Papa Cat *******************/
 // - Define an object called cat2 that contains the following properties:
 //   - name
 //   - breed
@@ -600,7 +598,7 @@ let cat2 = {
     breed: "Mog"
 };
 
-/*                    Combine Cats                  */
+/***************** Combine Cats *****************/
 // The cats are multiplying!
 // Write a function combineCats that has two parameters mama, and papa. The function will take two arguments -- each a cat object.
 // - Pass cat1 and cat2 as arguments to the combineCats function. The function should console.log them.
@@ -623,35 +621,42 @@ let cat2 = {
 // This is to demonstrate that a function can return an object
 function combineCats(mama, papa){
     let cat = {};
-    //console.log(mama);
-    //console.log(papa);
     
     cat.name = papa.name + mama.name;
     cat.age = 1;
     cat.breed = papa.breed + "-" + mama.breed;
     
+    //console.log("CURRENT CAT: ");
     //console.log(cat);
     return cat;
 }
+//combineCats(cat1, cat2);
 console.log(combineCats(cat1, cat2));
 //console.log(combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" }));
 
-/*                  Cat Brain Bender                */
+/*************** Cat Brain Bender ***************/
 // If combineCats returns an object, and if combineCats takes objects as arguments, then it stands to reason that:
 // catCombinator can use itself as its own argument.
 // Take a second to stew on that . . .
 // What is the result of:
 // console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
 // Whoa . . .
+//combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2));
+//console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
 // The above console.log is two levels deep of combineCats.
+
 // - Write a console.log that is three levels deep of combineCats. 
 //   combineCats should have two arguments, each which are combineCats, each which have two arguments, each which are combineCats.
 // Your output should look something like:
 /*
-   {name: 'JoeJamJoeJamJoeJamJoeJamJoeJam',
+   {name: 'JoeJamJoeJamJoeJamJoeJam',
    age: 1,
    breed: 'Mog-Siamese-Mog-Siamese-Mog-Siamese-Mog-Siamese'}
 */
-console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
-console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), (combineCats(cat1, cat2), combineCats(cat1, cat2))));
-//console.log(combineCats(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))), (combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)))));
+//combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+console.log(
+    combineCats(
+        combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), 
+        combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
+    )
+);
